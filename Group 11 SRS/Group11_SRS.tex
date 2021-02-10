@@ -74,7 +74,7 @@
 
 \chapter{Introduction}
 This Software Requirement Specification (SRS) Document describes an
-android/web application that provides children to draw, paint, and create their own art along with having fun. 
+Android application that provides children to draw, paint, and create their own art along with having fun. 
 
 \section{Purpose}
 The purpose of this document is to build an offline painting application to aid children to develop their mobility and creativity skills.
@@ -84,11 +84,11 @@ The format specified by IEEE was followed while creating this document.
 \begin{itemize}[itemsep=0.5pt]
     \item User: Person interacting with the application
     \item SRS: Software Requirements Specifications
-    \item APK : Android Package
+    \item APK: Android Package
 \end{itemize}
 
 \section{Intended Audience and Reading Suggestions}
-This project is a prototype of the paint application for children of five to nine years age. The intended audience for this SRS is Professor Samit Bhattacharya, who is in charge of the CS-346: Software Engineering course. 
+This project is a prototype of the paint application for children from five to nine years of age. The intended audience for this SRS is Professor Samit Bhattacharya, who is in charge of the CS-346: Software Engineering Laboratory course. 
 
 \section{Project Scope}
 The software that this SRS specifies is the Creative Paint (CP) Application. Its goal is to create a convenient and easy-to-use application for children, trying to have fun while drawing. Above all, we hope to provide a comfortable user experience.
@@ -97,7 +97,7 @@ The software that this SRS specifies is the Creative Paint (CP) Application. Its
 IEEE, IEEE Standard 830-1998 IEEE Recommended Practice for Software Requirements Specifications, IEEE Computer Society, 1998.
 
 \section{Overview}
-The remaining part of the SRS contains:
+The remaining part of the SRS document contains:
 \begin{itemize}[itemsep=0.5pt]
     \item The Overall Description and Functioning of the Software
     \item Specific Requirements:
@@ -111,8 +111,8 @@ The remaining part of the SRS contains:
 \chapter{Overall Description}
 
 \section{Product Perspective}
-The product described in the document is a Paint App. It is a stand-alone Android application that can be launched after installing via a standard freely-distributed APK file.
-The product is envisioned to give children of the age group 5yrs to 9yrs a platform to explore their creative skills. It aims to provide a user friendly experience to them. Equipped with two different modes: 1)Game Mode 2)Practice Mode, the paint app offers a wholesome experience to art lovers. 
+The product described in the document is a Paint Application. It is a stand-alone Android application that can be launched after installing via a standard freely-distributed APK file.
+The product is envisioned to give children of the age group from 5 to 9 years a platform to explore their creative skills. It aims to provide a user friendly experience to them. Equipped with two different modes: 1) Game Mode  2) Practice Mode, the paint app offers a wholesome experience to art lovers. 
 
 \section{Product Functions}
 Functions included in the final app will be as follows:
@@ -127,26 +127,27 @@ Functions included in the final app will be as follows:
 \section{User Classes and Characteristics}
 Information regarding users who can use the app:
     \begin{enumerate}[itemsep=0.5pt]
-        \item Our app is targeted mainly for children between age range 5-9 years.
-        \item Children who just wanted to play for fun of any age.
-        \item Children who wanted to develop their art skills starting from basic levels. 
+        \item Our app is targeted mainly for children between age range of 5-9 years.
+        \item Children who just intend to play for fun of any age.
+        \item Children who intend to develop their art skills starting from basic levels. 
     \end{enumerate}
 The intended users for the product will have the following characteristics:
     \begin{enumerate}[itemsep=0.5pt]
         \item Able to understand the functioning and operation of the software on a basic level.
-        \item Able to afford and use a mobile app following the minimum hardware and software requirements.
+        \item Able to afford and use a mobile application following the minimum hardware and software requirements.
         \item The user is able to understand English.
         \item The users of all ages can use our app.
     \end{enumerate}
 
 \section{Operating Environment}
-Our app will work on an android device with at least 512 MB RAM.
+Our app will function suitably on android devices with at least 512 MB of RAM.
 
 \section{Assumptions and Dependencies}
 Performance of the app will depend on hardware configuration of device and operating system in use.
+\newline
 Assumptions:
 \begin{enumerate}[itemsep=0.5pt]
-    \item Device uses Android 5 or higher / API level 24 or higher.
+    \item Device uses Android 7[Nougat, API 24] or higher.
     \item Touch screen
 \end{enumerate}
 
@@ -200,7 +201,10 @@ User can choose a pencil with a specified size and colour.
 \textbf{Output:} Eraser
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
-User can choose a pencil with a specified size and colour.
+User can choose an eraser to 
+clear the drawn image. He/She has the 
+option to choose a size of the eraser.
+
 
 \paragraph{3.1.1.1.1.1.3 Brush Tool}
 \hfill \vspace{2.5mm} \break 
@@ -216,36 +220,36 @@ User can choose brush to draw an image. He/She has the option to choose a size o
 \textbf{Output:} Coloured Image
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
-User can fill colour in an image.He/she has to choose a color and image in which they want to fill the colour.
+User can fill colour in an image. He/she has to choose a color and image in which they want to fill the colour.
 
 \paragraph{3.1.1.1.1.1.5 Select Shape}
 \hfill \vspace{2.5mm} \break 
-\textbf{Input:} Size and Colour \newline
-\textbf{Output:} Pencil
+\textbf{Input:} Type \newline
+\textbf{Output:} Shape
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
 User will be given different types of the shape to choose from. He/She will select the shape and it will appear on the board.
 
 \paragraph{3.1.1.1.1.1.6 Undo}
 \hfill \vspace{2.5mm} \break 
-\textbf{Input:} Type \newline
-\textbf{Output:} Shape
+\textbf{Input:} Image \newline
+\textbf{Output:} Image
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
 User will use this option to revert back or undone the recent work done.
 
 \paragraph{3.1.1.1.1.1.7 Save Image}
 \hfill \vspace{2.5mm} \break 
-\textbf{Input:} Size and Colour \newline
-\textbf{Output:} Pencil
+\textbf{Input:} Image \newline
+\textbf{Output:} Image Saved
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
 Users will be able to save his work so that they can see it in future.
 
 \paragraph{3.1.1.1.1.1.8 Share Image}
 \hfill \vspace{2.5mm} \break 
-\textbf{Input:} Size and Colour \newline
-\textbf{Output:} Pencil
+\textbf{Input:} Image \newline
+\textbf{Output:} Image Shared
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
 Users will be able to share their artwork on social media.
@@ -260,10 +264,10 @@ User is prompted to select a drawing board from different choices to practice hi
 \paragraph{3.1.1.2.1 Drawing Board Layout}
 \hfill \vspace{2.5mm} \break 
 \textbf{Input:} Drawing Board Layout \newline
-\textbf{Output:} Drawing board and Toolbox
+\textbf{Output:} Drawing board, Toolbox and default reference image.
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
-User selects a board from given alternatives. A toolbox along with white board appears.
+User selects a board from given alternatives. A toolbox and white board, along with a default reference image appears.
 
 \paragraph{3.1.1.2.1.1 Image Selection}
 \hfill \vspace{2.5mm} \break 
@@ -279,7 +283,7 @@ User selects an image from given alternatives. A toolbox and white board along w
 User has various tools which
 he/she can use it to draw or paint. It appears along with the drawing board layout. It offers the following tools for the drawing.
 
-\paragraph{3.1.1.2.1.1.1 Pencil Tool}
+\paragraph{3.1.1.2.1.2.1 Pencil Tool}
 \hfill \vspace{2.5mm} \break 
 \textbf{Input:} Size and Colour \newline
 \textbf{Output:} Pencil
@@ -287,15 +291,18 @@ he/she can use it to draw or paint. It appears along with the drawing board layo
 \textbf{Description:} \newline 
 User can choose a pencil with a specified size and colour.
 
-\paragraph{3.1.1.2.1.1.2 Select Eraser}
+\paragraph{3.1.1.2.1.2.2 Select Eraser}
 \hfill \vspace{2.5mm} \break 
 \textbf{Input:} Size \newline
 \textbf{Output:} Eraser
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
-User can choose a pencil with a specified size and colour.
+User can choose an eraser to 
+clear the drawn image. He/She has the 
+option to choose a size of the eraser.
 
-\paragraph{3.1.1.2.1.1.3 Brush Tool}
+
+\paragraph{3.1.1.2.1.2.3 Brush Tool}
 \hfill \vspace{2.5mm} \break 
 \textbf{Input:} Size and Colour \newline
 \textbf{Output:} Brush
@@ -303,47 +310,47 @@ User can choose a pencil with a specified size and colour.
 \textbf{Description:} \newline 
 User can choose brush to draw an image. He/She has the option to choose a size of the brush.
 
-\paragraph{3.1.1.2.1.1.4 Colour Fill}
+\paragraph{3.1.1.2.1.2.4 Colour Fill}
 \hfill \vspace{2.5mm} \break 
 \textbf{Input:} Colour and Image \newline
 \textbf{Output:} Coloured Image
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
-User can fill colour in an image.He/she has to choose a color and image in which they want to fill the colour.
+User can fill colour in an image. He/she has to choose a color and image in which they want to fill the colour.
 
-\paragraph{3.1.1.2.1.1.5 Select Shape}
-\hfill \vspace{2.5mm} \break 
-\textbf{Input:} Size and Colour \newline
-\textbf{Output:} Pencil
-\vspace{1mm}\newline
-\textbf{Description:} \newline 
-User will be given different types of the shape to choose from. He/She will select the shape and it will appear on the board.
-
-\paragraph{3.1.1.2.1.1.6 Undo}
+\paragraph{3.1.1.2.1.2.5 Select Shape}
 \hfill \vspace{2.5mm} \break 
 \textbf{Input:} Type \newline
 \textbf{Output:} Shape
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
+User will be given different types of the shape to choose from. He/She will select the shape and it will appear on the board.
+
+\paragraph{3.1.1.2.1.2.6 Undo}
+\hfill \vspace{2.5mm} \break 
+\textbf{Input:} Image \newline
+\textbf{Output:} Image
+\vspace{1mm}\newline
+\textbf{Description:} \newline 
 User will use this option to revert back or undone the recent work done.
 
-\paragraph{3.1.1.2.1.1.7 Save Image}
+\paragraph{3.1.1.2.1.2.7 Save Image}
 \hfill \vspace{2.5mm} \break 
-\textbf{Input:} Size and Colour \newline
-\textbf{Output:} Pencil
+\textbf{Input:} Image \newline
+\textbf{Output:} Image Saved
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
 Users will be able to save his work so that they can see it in future.
 
-\paragraph{3.1.1.2.1.1.8 Share Image}
+\paragraph{3.1.1.2.1.2.8 Share Image}
 \hfill \vspace{2.5mm} \break 
-\textbf{Input:} Size and Colour \newline
-\textbf{Output:} Pencil
+\textbf{Input:} Image \newline
+\textbf{Output:} Image Shared
 \vspace{1mm}\newline
 \textbf{Description:} \newline
 Users will be able to share their artwork on social media.
 
-\subsubsection{Game Mode}
+\subsection{Game Mode}
 \textbf{Input:} Game Mode \newline
 \textbf{Output:} List of Levels
 \vspace{1mm}\newline
@@ -389,7 +396,10 @@ User can choose a pencil with a specified size and colour.
 \textbf{Output:} Eraser
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
-User can choose a pencil with a specified size and colour.
+User can choose an eraser to 
+clear the drawn image. He/She has the 
+option to choose a size of the eraser.
+
 
 \paragraph{3.1.2.1.1.1.3 Brush Tool}
 \hfill \vspace{2.5mm} \break 
@@ -405,41 +415,41 @@ User can choose brush to draw an image. He/She has the option to choose a size o
 \textbf{Output:} Coloured Image
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
-User can fill colour in an image.He/she has to choose a color and image in which they want to fill the colour.
+User can fill colour in an image. He/she has to choose a color and image in which they want to fill the colour.
 
 \paragraph{3.1.2.1.1.1.5 Select Shape}
 \hfill \vspace{2.5mm} \break 
-\textbf{Input:} Size and Colour \newline
-\textbf{Output:} Pencil
+\textbf{Input:} Type \newline
+\textbf{Output:} Shape
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
 User will be given different types of the shape to choose from. He/She will select the shape and it will appear on the board.
 
 \paragraph{3.1.2.1.1.1.6 Undo}
 \hfill \vspace{2.5mm} \break 
-\textbf{Input:} Type \newline
-\textbf{Output:} Shape
+\textbf{Input:} Image \newline
+\textbf{Output:} Image
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
 User will use this option to revert back or undone the recent work done.
 
 \paragraph{3.1.2.1.1.1.7 Save Image}
 \hfill \vspace{2.5mm} \break 
-\textbf{Input:} Size and Colour \newline
-\textbf{Output:} Pencil
+\textbf{Input:} Image \newline
+\textbf{Output:} Image Saved
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
 Users will be able to save his work so that they can see it in future.
 
 \paragraph{3.1.2.1.1.1.8 Share Image}
 \hfill \vspace{2.5mm} \break 
-\textbf{Input:} Size and Colour \newline
-\textbf{Output:} Pencil
+\textbf{Input:} Image \newline
+\textbf{Output:} Image Shared
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
 Users will be able to share their artwork on social media.
 
-\paragraph{3.1.2.1.1.1.8 Submit}
+\paragraph{3.1.2.1.1.1.9 Submit}
 \hfill \vspace{2.5mm} \break 
 \textbf{Input:} Image \newline
 \textbf{Output:} Rewards
@@ -473,10 +483,9 @@ User will go one step back to My Work section where all his previous work is dis
 \hfill \vspace{2.5mm} \break 
 \textbf{Input:} Delete \newline
 \textbf{Output:} "My Work" Section
-xv 
 \vspace{1mm}\newline
 \textbf{Description:} \newline 
-If user selects the delete operation, image is being deleted and user will go one step back to My Work section
+If user selects the delete operation, image is being deleted and user will go one step back to My Work section.
 
 \subsubsection{3.1.3.2 Image Menu}
 \textbf{Input:} Image \newline
@@ -522,14 +531,15 @@ This section shows different drawable images to give an inspiration to the child
 On clicking the share button of the image, different options (whatsapp, facebook, instagram) to share that particular image appears.
 
 \section{User Interfaces}
-\textcolor{red}{Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on.  
-Define the software components for which a user interface is needed. Details of the user interface design should be documented in a separate user interface specification.}
+The system shall provide a very intuitive and simple interface to the user and the administrator, so that the user can easily navigate through the modes, levels and layouts.
+The interface is very easy to use and will have tutorials for using along with it.
+Apart from the hardware, software and communication interfaces, no other specific interface is required 
 
 \section{Hardware Interfaces}
 The application has no designated hardware so there are no direct hardware interfaces.
 
 \section{Software Interfaces}
-The game will run on all devices supporting Android 5.0(Lollipop) API 21 and above.
+The game will run on all devices supporting Android 7.0[Nougat, API 24] and above.
 
 \section{Communications Interfaces}
 Only communication interface is the internet. It allows the user to share his/her art on social media.
@@ -537,7 +547,7 @@ Only communication interface is the internet. It allows the user to share his/he
 \chapter{Nonfunctional Requirements}
 
 \section{Performance Requirements}
-512MB RAM: Better and more RAM will help in loading the pages instantly.
+Better and higher RAM will help in loading the pages instantly. Atleast 512MB of RAM is preferred.
 
 \section{Availability}
 The system will be available for use whenever the user deems necessary 24/7. The system shall allow users to restart the application after failure of the app with the earlier user saved works and settings.
@@ -583,7 +593,7 @@ One member from our team observed his 7 year old relative and another member did
         \item Recording the observations
         \item Asking relevant queries and clarifications
     \end{enumerate}
-    \vspace{3pt}
+    %\vspace{3pt}
     
     \begin{tabular}{|| m{0.25\textwidth } | m{0.35\textwidth} | m{0.35\textwidth}||}
     \hline \rowcolor{lightgray} \hline
@@ -594,7 +604,7 @@ One member from our team observed his 7 year old relative and another member did
     \textbf{Imagination and creativity} & Good at imagining & He faces difficulty in drawing completely on his own \\ \hline
     \textbf{Interest and Enthusiasm} & Not much enthusiasm in drawing as such in traditional method & Very much excited and enthusiastic about new prospects. \\ \hline
     \textbf{Parents interference and support} & Parents do not want to give exposure to smartphones at this age. & Parents do not have time to monitor whether their child is learning properly. \\ \hline
-    \textbf{Software, Applications} & Uses smartphones under parents guidance. & Uses various applications and is quite familiar with digital entertainment as well as learning. \\ \hline
+    \textbf{Software, Applications} & Uses smartphones under parents guidance. & Uses various applications and is quite familiar with digital learning. \\ \hline
     \end{tabular}
 
     \item \textbf{Close}
@@ -602,6 +612,7 @@ One member from our team observed his 7 year old relative and another member did
 
     \item \textbf{Reflect}
             Analyzing the data generated through Affinity diagram: 
+    \vspace{3mm}
     \begin{figure}[!h]
         \centering
         \includegraphics[width=\textwidth]{3.png}
