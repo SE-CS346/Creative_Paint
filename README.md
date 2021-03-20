@@ -1,1 +1,5 @@
-# Paint_Application
+- This repository contains the following documents for creating a Paint Application
+	- Software Requirement Specification
+	- Design Document
+	- Usability Document
+	- Design Justification
