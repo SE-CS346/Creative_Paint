@@ -3,3 +3,5 @@
 	- Design Document
 	- Usability Document
 	- Design Justification
+	- Prototype
+	- Evaluation
